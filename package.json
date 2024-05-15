@@ -1,0 +1,24 @@
+{
+  "name": "playwrightwithts",
+  "version": "1.0.0",
+  "description": "After analyzing the products and various automation tools, we selected [Playwright](https://playwright.dev). which is one of the popular open‐source functional and regression testing tools in recent time and very well suited for this product requirments. We went through the application, understood its functionality and work‐flow, and prepared our automation plan.",
+  "main": "index.js",
+  
+  "scripts": {
+    "env:dev": "cross-env test_env=dev npx playwright test",
+    "env:uat": "cross-env test_env=uat npx playwright test",
+    "env:prod": "cross-env test_env=prod npx playwright test",
+    "env:store": "cross-env test_env=storeFront npx playwright test"
+  },
+
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.1",
+    "@skilbourn/playwright-report-summary": "^1.1.1",
+    "@types/node": "^20.12.8"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
